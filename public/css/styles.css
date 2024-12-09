@@ -1,0 +1,98 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #d16105;
+    padding: 30px 0;
+  }
+  
+  .navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+  
+  .navbar a:hover {
+    background-color: #b15305;
+    border-radius: 5px;
+  }
+  
+  /* Contenido principal */
+  .content {
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 70px;
+    color: #dd6605;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor de tarjetas */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  /* Estilo de las tarjetas */
+  .card {
+    background-color: #f7f7f7;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Íconos dentro de las tarjetas */
+  .card-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  
+
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+
+  
+ 
+  

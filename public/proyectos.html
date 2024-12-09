@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Universidad Tecnológica Nacional</title>
+    <link rel="icon" type="images" href="imagen/UTN.jpg" />
+    <link rel="stylesheet" href="./css/proyectos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Universidad Tecnológica Nacional</h1>
+    </header>
+    <main>
+        <section id="form-section">
+            <h2>Formulario de Proyecto</h2>
+            <form id="project-form">
+                <label for="authors">Nombre y apellido de autores:</label>
+                <input type="text" id="authors" required>
+
+                <label for="project-name">Nombre de proyecto:</label>
+                <input type="text" id="project-name" required>
+
+                <label for="year">Año:</label>
+                <select id="year" required>
+                    <option value="">Seleccione un año</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select>
+
+                <label for="race">Carrera:</label>
+                <select id="race" required>
+                    <option value="">Seleccione carrera</option>
+                    <option value="Tecnicatura Universitaria en Logistica">Tecnicatura Universitaria en Logistica</option>
+                    <option value="Tecnicatura Universitaria en Mecatronica">Tecnicatura Universitaria en Mecatronica</option>
+                    <option value="Tecnicatura Universitaria en Programacion">Tecnicatura Universitaria en Programacion</option>
+                    <option value="Tecnicatura Universitaria en Higiene y Seguridad en el trabajo">Tecnicatura Universitaria en Higiene y Seguridad en el trabajo</option>
+                    <option value="Tecnicatura Universitaria en Mantenimiento Industrial">Tecnicatura Universitaria en Mantenimiento Industrial</option>
+                    <option value="Licenciatura en Tecnologia Educativa">Licenciatura en Tecnologia Educativa</option>
+                    <option value="Licenciatura en Higiene y Seguridad en el trabajo">Licenciatura en Higiene y Seguridad en el trabajo</option>
+                    <option value="Licenciatura en Enseñanza de la matematica">Licenciatura en Enseñanza de la matematica</option>
+                    <option value="Profesorado en Docencia Superior">Profesorado en Docencia Superior</option>
+                </select>
+
+                <label for="type">Tipo:</label>
+                <input type="text" value="Proyecto" readonly>
+
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+        <section id="data-section">
+            <h2>Proyectos Guardados</h2>
+            <div id="search-container">
+                <select id="search-type">
+                    <option value="authors">Nombre y apellido</option>
+                    <option value="projectName">Nombre del proyecto</option>
+                    <option value="year">Año</option>
+                    <option value="type">Carrera</option>
+                </select>
+                <input type="text" id="search-input" placeholder="Buscar...">
+            </div>
+            <table id="projects-table">
+                <thead>
+                    <tr>
+                        <th>Autores</th>
+                        <th>Proyecto</th>
+                        <th>Año</th>
+                        <th>Carrera</th>
+                        <th>Tipo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="saved-projects"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="./js/proyectos.js"></script>
+</body>
+
+</html>

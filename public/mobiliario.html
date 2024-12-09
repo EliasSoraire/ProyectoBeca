@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="images" href="https://cdn-icons-png.freepik.com/512/869/869027.png" />
+  <title>Mobiliario</title>
+  <link rel="stylesheet" href="./css/mobiliario.css">
+</head>
+<body>
+
+  <nav>
+    <ul class="navbar">
+      <li><a href="./Inicio.html">Inicio</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Gestión de Mobiliario</h1>
+    <table id="inventory-table">
+      <thead>
+        <tr>
+          <th>Tipo</th>
+          <th>Cantidad</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Silla</td>
+          <td><input type="number" min="0" value="" data-type="Silla"></td>
+          <td>
+            <button class="add-btn" data-type="Silla">Agregar</button>
+            <button class="remove-btn" data-type="Silla">Eliminar</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Mesa</td>
+          <td><input type="number" min="0" value="" data-type="Mesa"></td>
+          <td>
+            <button class="add-btn" data-type="Mesa">Agregar</button>
+            <button class="remove-btn" data-type="Mesa">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button id="add-type-btn">Agregar Tipo</button>
+
+    <h2>Lista de Articulos</h2>
+    <table id="inventory-list">
+      <thead>
+        <tr>
+          <th>Tipo</th>
+          <th>Cantidad Agregada</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Formulario para agregar un nuevo tipo -->
+  <div id="add-type-form" class="modal hidden">
+    <div class="modal-content">
+      <h3>Agregar Nuevo Tipo</h3>
+      <label for="new-type-name">Nombre del Tipo:</label>
+      <input type="text" id="new-type-name" placeholder="Ejemplo: Banco" />
+      <button id="confirm-add-type">Agregar</button>
+      <button id="cancel-add-type">Cancelar</button>
+    </div>
+  </div>
+
+  <script src="./js/mobiliario.js"></script>
+</body>
+</html>
